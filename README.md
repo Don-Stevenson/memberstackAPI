@@ -1,4 +1,28 @@
-# Getting Started with Create React App
+# place to try out the memberstack api with React
+- using memberstacks api was tricky to get working.
+
+- ### Post Requests look like this
+
+        fetch("https://cors-anywhere.herokuapp.com/https://api.memberstack.com/v1/members", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "X-Api-Key": "API_KEY"
+            },
+            body: JSON.stringify({ 
+                email: "vas@gmail.com",
+                password: "PASSWORD",
+                plan: "PLAN_KEY",
+            })
+            })
+        console.log({res})
+
+
+
+
+
+
+- ### Get Requests look like this
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
